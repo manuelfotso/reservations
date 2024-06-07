@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 18, 2022 at 05:31 AM
+-- Generation Time: Nov 08, 2022 at 01:38 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -30,6 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `cottage/hall` (
   `id` int(250) NOT NULL,
   `img` varchar(250) NOT NULL,
+  `actual_no` varchar(50) NOT NULL,
   `name` varchar(250) NOT NULL,
   `type` varchar(250) NOT NULL,
   `category` varchar(250) NOT NULL,
@@ -41,12 +42,8 @@ CREATE TABLE `cottage/hall` (
 -- Dumping data for table `cottage/hall`
 --
 
-INSERT INTO `cottage/hall` (`id`, `img`, `name`, `type`, `category`, `max_person`, `price`) VALUES
-(12, 'uploads/3-1.jpg', 'cottage 4', 'Cottage', 'Cottage', 15, 400),
-(11, 'uploads/7-1.jpg', 'cottage 3', 'Cottage', 'Cottage', 10, 300),
-(10, 'uploads/crimson-resort-spa-mactan-workshop-and-training-event-space-cebu-philippines-medium.jpg', 'function hall', 'Hall', '1st Class', 200, 5000),
-(9, 'uploads/3-1.jpg', 'cottage 2', 'Cottage', '2nd Class', 20, 3000),
-(15, 'uploads/cml-beach-resort-water.jpg', 'cottage 5', 'Cottage', '2nd Class', 15, 500);
+INSERT INTO `cottage/hall` (`id`, `img`, `actual_no`, `name`, `type`, `category`, `max_person`, `price`) VALUES
+(2, 'uploads/small-cottage-18.jpg', '01', 'this is cottage name', 'Cottage', '1st Class', 12, 300);
 
 -- --------------------------------------------------------
 
@@ -69,7 +66,9 @@ INSERT INTO `feature` (`id`, `img`, `name`, `desc`) VALUES
 (12, 'uploads/crimson-resort-spa-mactan-workshop-and-training-event-space-cebu-philippines-medium.jpg', 'sample', 'this is sample description'),
 (13, 'uploads/crimson-resort-spa-mactan-workshop-and-training-event-space-cebu-philippines-medium.jpg', 'sample', 'this is sample description'),
 (10, 'uploads/crimson-resort-spa-mactan-workshop-and-training-event-space-cebu-philippines-medium.jpg', 'sample', 'sample'),
-(11, 'uploads/crimson-resort-spa-mactan-workshop-and-training-event-space-cebu-philippines-medium.jpg', 'sample', 'this is sample description');
+(11, 'uploads/crimson-resort-spa-mactan-workshop-and-training-event-space-cebu-philippines-medium.jpg', 'sample', 'this is sample description'),
+(14, 'uploads/small-cottage-18.jpg', 'sample', 'sample'),
+(15, 'uploads/images.jpg', 'this is name sample', 'this is description sample');
 
 -- --------------------------------------------------------
 
@@ -89,9 +88,7 @@ CREATE TABLE `feedback` (
 --
 
 INSERT INTO `feedback` (`feedback_id`, `cust_id`, `name`, `description`) VALUES
-(9, 0, 'emely', 'Sarap balik-balikan, sulit ang aming binayad'),
-(8, 0, 'Anonymous', 'Nice resort, Good customer service and nakaka relax talaga dito'),
-(10, 0, 'jenellyn', 'Nice experience, sa uulitin. Maganda yung place');
+(1, 0, 'sample name', 'good experience nice place');
 
 -- --------------------------------------------------------
 
@@ -103,16 +100,16 @@ CREATE TABLE `payment` (
   `payment_id` int(250) NOT NULL,
   `transaction_id` int(250) NOT NULL,
   `ammount_payment` int(250) NOT NULL,
-  `payment_status` varchar(250) NOT NULL
+  `payment_status` varchar(250) NOT NULL,
+  `ref_no` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `payment`
 --
 
-INSERT INTO `payment` (`payment_id`, `transaction_id`, `ammount_payment`, `payment_status`) VALUES
-(1, 2036071676, 275, 'Paid'),
-(2, 607500262, 275, 'Paid');
+INSERT INTO `payment` (`payment_id`, `transaction_id`, `ammount_payment`, `payment_status`, `ref_no`) VALUES
+(1, 1197077060, 476, 'Fullypaid', 'sample12345');
 
 -- --------------------------------------------------------
 
@@ -162,7 +159,7 @@ CREATE TABLE `reservation` (
 --
 
 INSERT INTO `reservation` (`id`, `trans_no`, `date_reserve`, `child`, `adult`, `check_in`, `check_out`, `status`, `cottage/hall_id`, `customer_id`, `date_created`, `downpayment`, `balance`) VALUES
-(1, '2036071676', '2022-05-19', 2, 2, '2022-05-17 23:25:50', '0000-00-00 00:00:00', 'Reserved', 12, 4, '2022-05-18', 0, 0);
+(3, '1197077060', '2022-11-11', 3, 2, '2022-11-08 11:44:34', '0000-00-00 00:00:00', 'Fullypaid', 2, 18, '2022-11-08', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -187,14 +184,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`user_id`, `fname`, `lname`, `contact_no`, `address`, `uname`, `pass`, `user_type_id`) VALUES
 (1, 'admin', 'admin', '0', 'poblacion', 'admin', 'admin', 1),
-(2, 'Melody', 'Marks', '09054234567', 'poblacion, kabacan', 'melody', '1234', 3),
-(4, 'john', 'loyd', '09762132056', 'matalam, poblacion', 'john', '1234', 3),
-(5, 'shiela', 'sin', '09673927462', 'address', 'shiela', '1234', 2),
-(8, 'Aine', 'Macalanas', '', '', 'aine', '1234', 4),
-(12, 'Danna', 'Santos', '', '', 'dandan', '12345', 4),
-(14, 'kianna', 'Lomoljo', '0909288101', 'Malamote Matalam Cotabato', 'kianna', '12345', 3),
-(16, 'eman', 'hemeniz', '', '', 'eman', '1234', 3),
-(17, 'Juan ', 'Delacruz', '09762132056', 'Matalam, poblacion', 'juan', '1234', 3);
+(18, 'Cardo', 'Dalisay', '09783648265', 'this is sample address', 'cardo', 'cardo1234', 3);
 
 -- --------------------------------------------------------
 
@@ -277,25 +267,25 @@ ALTER TABLE `user_type`
 -- AUTO_INCREMENT for table `cottage/hall`
 --
 ALTER TABLE `cottage/hall`
-  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `feature`
 --
 ALTER TABLE `feature`
-  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `feedback_id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `feedback_id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `payment`
 --
 ALTER TABLE `payment`
-  MODIFY `payment_id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `payment_id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `picture`
@@ -307,13 +297,13 @@ ALTER TABLE `picture`
 -- AUTO_INCREMENT for table `reservation`
 --
 ALTER TABLE `reservation`
-  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `user_id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `user_type`

@@ -26,11 +26,11 @@ if (isset($_POST["btn-cottage-add"])) {
 
 
 
-    $sql = "INSERT INTO `cottage/hall`(`img`, `actual_no`, `name`,`type`,`category`,`max_person`,`price`) 
+    $sqlcott = "INSERT INTO `cottage/hall`(`img`, `actual_no`, `name`,`type`,`category`,`max_person`,`price`) 
 
             VALUES('$target_file','$actual_no','$name','$type','$cat','$max_person','$price')";
 
-    $query = mysqli_query($con, $sql);
+    $query = mysqli_query($con, $sqlcott);
 
 
 

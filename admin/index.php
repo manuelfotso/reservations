@@ -9,7 +9,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>D'S FARM</title>
+  <title>PRESTIGE PALACE</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <?php include "shared/link.php"?>
 
@@ -121,7 +121,7 @@
             progressBar: true
         })
     <?php }
-    if ($_SESSION["notify"]=="failed-add") {?>
+    if ($_SESSION["notify"]=="failed-adds") {?>
         toastr.error('Failed to Confirm.', 'Failed!', 
         {positionClass: 'toast-bottom-right',
             timeOut: 5000,  

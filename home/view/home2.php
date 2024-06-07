@@ -18,21 +18,21 @@ if (isset($_GET["home"])) {?>
                 </ol>
                 <div class="carousel-inner">
                   <div class="item active">
-                    <img src="image/res1.jpg" alt="First slide">
+                    <img src="image/r1.jpg" alt="First slide">
 
                     <div class="carousel-caption">
                       First Slide
                     </div>
                   </div>
                   <div class="item">
-                    <img src="image/res1.jpg" alt="Second slide">
+                    <img src="image/r2.jpg" alt="Second slide">
 
                     <div class="carousel-caption">
                       Second Slide
                     </div>
                   </div>
                   <div class="item">
-                    <img src="image/res1.jpg" alt="Third slide">
+                    <img src="image/r3.jpg" alt="Third slide">
 
                     <div class="carousel-caption">
                       Third Slide
@@ -103,11 +103,7 @@ if (isset($_GET["home"])) {?>
                               <option value="3">3</option>
                               <option value="4">4</option>
                               <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
+                              
                           </select>
                        </div>
                     </div>
@@ -120,11 +116,7 @@ if (isset($_GET["home"])) {?>
                               <option value="3">3</option>
                               <option value="4">4</option>
                               <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
+                             
                           </select>
                        </div>
                     </div>
@@ -136,8 +128,8 @@ if (isset($_GET["home"])) {?>
                 <br>
                 <table class="table table-condensed" id="table-cottage">
                     <tr class="bg-gray">
-                        <th>Cottage Name</th>
-                        <th>Cottage Type</th>
+                        <th>Premiun Name</th>
+                        <th>Premiun Type</th>
                         <th>Price</th>
                         <th></th>
                     </tr>

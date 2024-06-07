@@ -8,7 +8,7 @@
 
     <h1>
 
-        Cottage/Hall
+        Premiun/Classic
 
     </h1>
 
@@ -16,7 +16,7 @@
 
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
 
-        <li class="active">Cottage/Hall</li>
+        <li class="active">Premiun/Classic</li>
 
     </ol>
 
@@ -34,7 +34,7 @@
 
             <div class="box-header with-border">
 
-              <h3 class="box-title"><a href="?cottage-add" class="btn btn-success"><i class="fa fa-plus"></i> New Cottage/Hall</a></h3>
+              <h3 class="box-title"><a href="?cottage-add" class="btn btn-success"><i class="fa fa-plus"></i> New Premiun/Classic</a></h3>
 
             </div>
 
@@ -50,7 +50,7 @@
 
                         <th>Image</th>
 
-                        <th>Cottage No.</th>
+                        <th>Premiun No.</th>
 
                         <th>Name</th>
 
@@ -106,7 +106,7 @@
 
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
 
-        <li class="active">Add Cottage/hall</li>
+        <li class="active">Add Premiun/Classic</li>
 
     </ol>
 
@@ -124,7 +124,7 @@
 
             <div class="box-header with-border">
 
-              <h3 class="box-title">Add Cottage/Hall</h3>
+              <h3 class="box-title">Add Premiun/Classic</h3>
 
             </div>
 
@@ -160,7 +160,7 @@
 
                         <div class="form-group">
 
-                            <label class="col-sm-4 control-label">Cottage/Hall Name</label>
+                            <label class="col-sm-4 control-label">Premiun/Classic Name</label>
 
                             <div class="col-sm-8">
 
@@ -178,9 +178,9 @@
 
                                 <select class="form-control" name="type" required>
 
-                                    <option value="Cottage">Cottage</option>
+                                    <option value="Cottage">Premiun</option>
 
-                                    <option value="Hall">Hall</option>
+                                    <option value="Hall">Classic</option>
 
                                 </select>
 
@@ -198,9 +198,7 @@
 
                                     <option value="1st Class">1st Class</option>
 
-                                    <option value="2nd Class">2nd Class</option>
-
-                                    <option value="3rd Class">3rd Class</option>
+                                    
 
                                 </select>
 
@@ -290,7 +288,7 @@
 
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
 
-        <li class="active">Edit Cottage/hall</li>
+        <li class="active">Edit Premiun/Classic</li>
 
     </ol>
 
@@ -308,7 +306,7 @@
 
             <div class="box-header with-border">
 
-              <h3 class="box-title">Edit Cottage/Hall</h3>
+              <h3 class="box-title">Edit Premiun/Classic</h3>
 
             </div>
 
@@ -333,7 +331,7 @@
                     <div class="col-md-6">
                     <div class="form-group">
 
-                            <label class="col-sm-4 control-label">Cottage No.</label>
+                            <label class="col-sm-4 control-label">Premiun No.</label>
 
                             <div class="col-sm-8">
 
@@ -345,7 +343,7 @@
 
                         <div class="form-group">
 
-                            <label class="col-sm-4 control-label">Cottage/Hall Name</label>
+                            <label class="col-sm-4 control-label">Premiun/Classic Name</label>
 
                             <div class="col-sm-8">
 
@@ -367,9 +365,9 @@
 
                                 <select class="form-control" name="type" required>
 
-                                    <option value="Cottage">Cottage</option>
+                                    <option value="Cottage">Premiun</option>
 
-                                    <option value="Hall">Hall</option>
+                                    <option value="Hall">Classic</option>
 
                                 </select>
 
@@ -387,9 +385,7 @@
 
                                     <option value="1st Class">1st Class</option>
 
-                                    <option value="2nd Class">2nd Class</option>
-
-                                    <option value="3rd Class">3rd Class</option>
+                                    
 
                                 </select>
 

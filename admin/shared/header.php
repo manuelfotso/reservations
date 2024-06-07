@@ -8,11 +8,11 @@
 
       <!-- mini logo for sidebar mini 50x50 pixels -->
 
-      <span class="logo-mini"><b>D'S</b></span>
+      <span class="logo-mini"><b>PRESTIGE</b></span>
 
       <!-- logo for regular state and mobile devices -->
 
-      <span class="logo-lg"><b>D'S</b>Farm</span>
+      <span class="logo-lg"><b>PRESTIGE</b>PALACE</span>
 
     </a>
 

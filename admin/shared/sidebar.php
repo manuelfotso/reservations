@@ -14,7 +14,7 @@
 
         <div class="pull-left image">
 
-          <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="../dist/img/avatar.png" class="img-circle" alt="User Image">
 
         </div>
 
@@ -50,7 +50,7 @@
 
         <li><a href="?dashboard"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
 
-        <li><a href="?cottage"><i class="fa fa-th-list"></i> <span>Cottage/Hall</span></a></li>
+        <li><a href="?cottage"><i class="fa fa-th-list"></i> <span>Premiun/Classic</span></a></li>
 
         <li><a href="?features"><i class="fa fa-th-list"></i> <span>Features</span></a></li>
 

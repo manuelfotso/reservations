@@ -11,21 +11,21 @@ if (isset($_GET["reservation"])) {?>
                 </ol>
                 <div class="carousel-inner">
                   <div class="item active">
-                    <img src="image/a1.jpg" alt="First slide" width="100%">
+                    <img src="image/w1.jpg" alt="First slide" width="100%">
 
                     <div class="carousel-caption">
                       First Slide
                     </div>
                   </div>
                   <div class="item">
-                    <img src="image/a2.jpg" alt="Second slide" width="100%">
+                    <img src="image/home2.jpg" alt="Second slide" width="100%">
 
                     <div class="carousel-caption">
                       Second Slide
                     </div>
                   </div>
                   <div class="item">
-                    <img src="image/a4.jpg" alt="Third slide" width="100%">
+                    <img src="image/home3.jpg" alt="Third slide" width="100%">
 
                     <div class="carousel-caption">
                       Third Slide
@@ -69,8 +69,8 @@ if (isset($_GET["reservation"])) {?>
                             <div class="form-group">
                                     <label for="">Type</label>
                                     <select class="form-control" name="category">
-                                        <option value="Cottage">Cottage</option>
-                                        <option value="Hall">Hall</option>
+                                        <option value="Cottage">Premiun</option>
+                                        <option value="Hall">classic</option>
                                     </select>
                                 </div>
                             </div>
